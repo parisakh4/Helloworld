@@ -1,6 +1,7 @@
-numbers = [2,2,2,2,5]
-for x_count in numbers:
-     output = ''
-     for count in range(x_count):
-         output += 'x'
-     print(output)
+numbers = [1,5,3,6,4,7,2]
+max = numbers[0]
+for number in numbers:
+    if number> max:
+        max = number
+print(max)
+
