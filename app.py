@@ -1,6 +1,11 @@
-numbers = [5,2,1,5,7,4,4]
-uniques = []
-for number in numbers:
-    if number not in uniques:
-        uniques.append(number)
-print(uniques)
+numbers = {
+    "1":"one",
+    "2":"two",
+    "3":"three",
+    }
+phone = input("phone: ")
+output = ""
+
+for i in phone:
+    output += numbers.get(i, "!")
+print(output)
