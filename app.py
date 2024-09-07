@@ -1,7 +1,6 @@
-numbers = [1,5,3,6,4,7,2]
-max = numbers[0]
+numbers = [5,2,1,5,7,4,4]
+uniques = []
 for number in numbers:
-    if number> max:
-        max = number
-print(max)
-
+    if number not in uniques:
+        uniques.append(number)
+print(uniques)
