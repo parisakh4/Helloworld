@@ -4,8 +4,13 @@ numbers = {
     "3":"three",
     }
 phone = input("phone: ")
+message = input(">")
+words = message.split(' ')
+emojis = {
+    ":)":"😂",
+    ":(":"😒"
+}
 output = ""
-
-for i in phone:
-    output += numbers.get(i, "!")
+for word in words:
+    output += emojis.get(word, word) + " "
 print(output)
