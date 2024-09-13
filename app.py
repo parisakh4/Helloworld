@@ -1,16 +1,14 @@
-numbers = {
-    "1":"one",
-    "2":"two",
-    "3":"three",
+def emojis(message):
+    words = message.split(" ")
+    emoji = {
+        ":)": "😃",
+        ":(": "😒"
     }
-phone = input("phone: ")
+    output = ""
+    for word in words:
+        output += emoji.get(word, word) + " "
+    return output
+
 message = input(">")
-words = message.split(' ')
-emojis = {
-    ":)":"😂",
-    ":(":"😒"
-}
-output = ""
-for word in words:
-    output += emojis.get(word, word) + " "
-print(output)
+result = emojis(message)
+print(result)
